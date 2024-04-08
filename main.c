@@ -17,7 +17,7 @@ void test_length_of_string_is_empty() {
 }
 
 void test_length_of_string_is_exceeds_the_size() {
-    char s[3] = "Hello";
+    char s[2] = "Hello";
 
     assert(!(length_of_string(s) == 5));
 }
@@ -47,7 +47,7 @@ void test_strlen_() {
     test_strlen_is_empty();
 }
 
-
+// 3
 
 
 
