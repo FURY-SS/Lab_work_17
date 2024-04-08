@@ -55,6 +55,12 @@ build CMakeFiles/lab_work_17.dir/main.c.obj: C_COMPILER__lab_work_17_unscanned_D
   OBJECT_DIR = CMakeFiles\lab_work_17.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_work_17.dir
 
+build CMakeFiles/lab_work_17.dir/string/string_.c.obj: C_COMPILER__lab_work_17_unscanned_Debug C$:/Users/Vadim/CLionProjects/lab_work_17/string/string_.c || cmake_object_order_depends_target_lab_work_17
+  DEP_FILE = CMakeFiles\lab_work_17.dir\string\string_.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab_work_17.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_work_17.dir\string
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab_work_17
@@ -63,7 +69,7 @@ build CMakeFiles/lab_work_17.dir/main.c.obj: C_COMPILER__lab_work_17_unscanned_D
 #############################################
 # Link the executable lab_work_17.exe
 
-build lab_work_17.exe: C_EXECUTABLE_LINKER__lab_work_17_Debug CMakeFiles/lab_work_17.dir/main.c.obj
+build lab_work_17.exe: C_EXECUTABLE_LINKER__lab_work_17_Debug CMakeFiles/lab_work_17.dir/main.c.obj CMakeFiles/lab_work_17.dir/string/string_.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_work_17.dir
