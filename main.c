@@ -15,9 +15,9 @@ void test_length_of_string_is_empty() {
 }
 
 void test_length_of_string_is_exceeds_the_size() {
-    char s[10] = "Hello";
+    char s[3] = "Hello";
 
-    assert(length_of_string(s) == 5);
+    assert(!(length_of_string(s) == 5));
 }
 
 void test_length_of_string() {
@@ -31,5 +31,5 @@ void test () {
 }
 
 int main() {
-    test;
+    test();
 }
