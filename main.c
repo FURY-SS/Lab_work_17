@@ -70,7 +70,29 @@ void test_find() {
     test_find_is_not_enabled();
 }
 
+void test_find_non_space_is_space() {
+    char s[] = "\t  3 4 5";
 
+    assert(find_non_space(s) == &s[3]);
+}
+
+void test_find_non_space_is_no_space() {
+    char s[] = "12345";
+
+    assert(find_non_space(s) == &s[0]);
+}
+
+void test_find_non_space_is_space_and_no_elements() {
+    char s[] = "    ";
+
+    assert(find_non_space(s) == &s[4]);
+}
+
+void test_find_non_space() {
+    test_find_non_space_is_space();
+    test_find_non_space_is_no_space();
+    test_find_non_space_is_space_and_no_elements();
+}
 
 
 
@@ -82,6 +104,7 @@ void test () {
     test_length_of_string();
     test_strlen_();
     test_find();
+    test_find_non_space();
 }
 
 int main() {
