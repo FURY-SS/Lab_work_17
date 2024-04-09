@@ -36,6 +36,10 @@ char* find(char *begin, char *end, int ch) {
 }
 
 char* find_non_space(char *begin) {
+    while (*begin != '\0' && isspace(*begin)) {
+        begin++;
+    }
 
+    return begin;
 }
 
