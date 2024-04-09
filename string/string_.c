@@ -43,3 +43,6 @@ char* find_non_space(char *begin) {
     return begin;
 }
 
+char* find_space(char *begin) {
+
+}

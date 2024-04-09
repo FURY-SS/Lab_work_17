@@ -47,7 +47,7 @@ void test_strlen_() {
     test_strlen_is_empty();
 }
 
-// 3
+// 3 (a)
 
 void test_find_is_enabled() {
     char s[] = "Hello";
@@ -69,6 +69,8 @@ void test_find() {
     test_find_is_enabled();
     test_find_is_not_enabled();
 }
+
+// 3 (b)
 
 void test_find_non_space_is_space() {
     char s[] = "\t  3 4 5";
@@ -94,8 +96,31 @@ void test_find_non_space() {
     test_find_non_space_is_space_and_no_elements();
 }
 
+// 3 (c)
 
+void test_find_space_is_space_and_no_elements() {
+    char s[] = "    ";
 
+    assert(find_space(s) == &s[0]);
+}
+
+void test_find_space_is_space() {
+    char s[] = "1234    ";
+
+    assert(find_space(s) == &s[4]);
+}
+
+void test_find_space_is_no_space() {
+    char s[] = "12345";
+
+    assert(find_space(s) == &s[5]);
+}
+
+void test_find_space() {
+    test_find_space_is_space_and_no_elements();
+    test_find_space_is_space();
+    test_find_space_is_no_space();
+}
 
 
 
@@ -105,6 +130,7 @@ void test () {
     test_strlen_();
     test_find();
     test_find_non_space();
+    test_find_space();
 }
 
 int main() {
