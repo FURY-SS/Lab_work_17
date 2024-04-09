@@ -100,5 +100,19 @@ char* copy_if(const char* begin_source, const char* end_source, char* begin_dest
     return begin_destination;
 }
 
+char* copy_if_reverse(const char *r_begin_source, const char *r_end_source, char *begin_destination, int (*f)(int)) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

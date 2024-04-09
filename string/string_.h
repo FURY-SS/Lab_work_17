@@ -33,10 +33,13 @@ int strcmp_(const char *lhs, const char *rhs);
 // Возвращает указатель на следующий свободный фрагмент памяти в destination.
 char* copy(const char *begin_source, const char *end_source, char *begin_destination);
 
-//
+// записывает по адресу beginDestination элементы начиная с beginSource заканчивая endSource, удовлетворяющие функции-предикату f.
+// Функция возвращает указатель на следующий свободный для записи фрагмент в памяти.
 char* copy_if(const char *begin_source, const char *end_source, char *begin_destination, int (*f)(int));
 
-//
+// записывает по адресу beginDestination элементы из фрагмента памяти начиная с rbeginSource
+ // заканчивая rendSource, удовлетворяющие функции-предикату f.
+ // Функция возвращает значение beginDestination по окончанию работы функции.
 char* copy_if_reverse(const char *r_begin_source, const char *r_end_source, char *begin_destination, int (*f)(int));
 
 #endif //LAB_WORK_17_STRING__H
