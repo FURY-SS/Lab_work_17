@@ -238,7 +238,6 @@ void test_copy() {
 
 // 6 (b)
 
-
 void test_copy_if() {
     char s[] = "1abcd";
     char s_copy[15];
@@ -248,8 +247,16 @@ void test_copy_if() {
     assert(strcmp_(s_copy, "abcd") == 0);
 }
 
+// 6 (c)
 
+void test_copy_if_reverse() {
+    char s[] = "1a2dcd3d";
+    char s_copy[15];
 
+    copy_if(s + strlen_(s) - 1, s - 1, s_copy, isdigit);
+
+    assert(strcmp_(s_copy, "123") == 0);
+}
 
 
 void test () {
@@ -263,6 +270,7 @@ void test () {
     test_strcmp_();
     test_copy();
     test_copy_if();
+    test_copy_if_reverse();
 }
 
 int main() {
