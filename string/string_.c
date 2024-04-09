@@ -1,7 +1,7 @@
 // Created by Vadim on 08.04.2024.
 
 #include <stdio.h>
-#include <malloc.h>
+#include <memory.h>
 #include <ctype.h>
 #include "string_.h"
 
@@ -68,6 +68,15 @@ char* find_space_reverse(char *r_begin, const char *r_end) {
 }
 
 int strcmp_(const char *lhs, const char *rhs) {
+    while (*lhs != '\0' && *rhs != '\0' && *lhs == *rhs) {
+        lhs++;
+        rhs++;
+    }
+
+    return *(const unsigned char*) lhs - *(const unsigned char*) rhs;
+}
+
+char* copy(const char* begin_source, const char* end_source, char* begin_destination) {
 
 }
 

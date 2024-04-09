@@ -29,5 +29,13 @@ char* find_space_reverse(char *rbegin, const char *rend);
 // иначе – положительное значение
 int strcmp_(const char *lhs, const char *rhs);
 
+//
+char* copy(const char *begin_source, const char *end_source, char *begin_destination);
+
+//
+char* copy_if(const char *begin_source, const char *end_source, char *begin_destination, int (*f)(int));
+
+//
+char* copy_if_reverse(const char *r_begin_source, const char *r_end_source, char *begin_destination, int (*f)(int));
 
 #endif //LAB_WORK_17_STRING__H

@@ -183,11 +183,6 @@ void test_find_space_reverse() {
 
 // 5
 
-
-
-
-
-
 void test_strcmp_is_equal() {
     char s1[] = "123";
     char s2[] = "123";
@@ -215,6 +210,31 @@ void test_strcmp_() {
     test_strcmp_is_not_equal_2();
 }
 
+// 6 (a)
+
+void test_copy_1() {
+    char s[] = "test";
+    char s_copy[10];
+
+    copy(s, s + strlen_(s), s_copy);
+
+    assert(strcmp_(s_copy, "test") == 0);
+}
+
+void test_copy_2() {
+    char s[] = "";
+    char s_copy[10];
+
+    copy(s, s + strlen_(s), s_copy);
+
+    assert(strcmp_(s_copy, "") == 0);
+}
+
+void test_copy() {
+    test_copy_1();
+    test_copy_2();
+}
+
 
 
 void test () {
@@ -226,6 +246,7 @@ void test () {
     test_find_non_space_reverse();
     test_find_space_reverse();
     test_strcmp_();
+    test_copy();
 }
 
 int main() {
