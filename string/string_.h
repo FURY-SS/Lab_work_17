@@ -19,7 +19,7 @@ char* find_non_space(char *begin);
 char* find_space(char *begin);
 
 // возвращает указатель на первый справа символ, отличный от пробельных, еслисимвол не найден, возвращается адрес rend.
-char* find_mon_space_reverse(char *rbegin, const char *rend);
+char* find_non_space_reverse(char *rbegin, const char *rend);
 
 // возвращает указатель на первый пробельный символ справа, tсли символ не найден, возвращается адрес rend.
 char* find_space_reverse(char *rbegin, const char *rend);

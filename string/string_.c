@@ -51,4 +51,6 @@ char* find_space(char *begin) {
     return begin;
 }
 
+char* find_non_space_reverse(char *r_begin, const char *r_end) {
 
+}
