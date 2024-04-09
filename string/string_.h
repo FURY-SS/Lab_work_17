@@ -29,7 +29,8 @@ char* find_space_reverse(char *rbegin, const char *rend);
 // иначе – положительное значение
 int strcmp_(const char *lhs, const char *rhs);
 
-//
+// записывает по адресу beginDestination фрагмент памяти, начиная с адреса beginSource до endSource
+// Возвращает указатель на следующий свободный фрагмент памяти в destination.
 char* copy(const char *begin_source, const char *end_source, char *begin_destination);
 
 //

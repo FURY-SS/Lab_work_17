@@ -86,7 +86,19 @@ char* copy(const char* begin_source, const char* end_source, char* begin_destina
     return begin_destination;
 }
 
+char* copy_if(const char* begin_source, const char* end_source, char* begin_destination, int (*f)(int)) {
 
+    while (begin_source != end_source) {
+        if (f(*begin_source)) {
+            *begin_destination = *begin_source;
+            begin_destination++;
+        }
+
+        begin_source++;
+    }
+
+    return begin_destination;
+}
 
 
 

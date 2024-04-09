@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include <ctype.h>
 #include "string/string_.h"
 
 // 2
@@ -235,6 +236,20 @@ void test_copy() {
     test_copy_2();
 }
 
+// 6 (b)
+
+
+void test_copy_if() {
+    char s[] = "1abcd";
+    char s_copy[15];
+
+    copy_if(s, s + strlen_(s), s_copy, isalpha);
+
+    assert(strcmp_(s_copy, "abcd") == 0);
+}
+
+
+
 
 
 void test () {
@@ -247,6 +262,7 @@ void test () {
     test_find_space_reverse();
     test_strcmp_();
     test_copy();
+    test_copy_if();
 }
 
 int main() {
