@@ -142,7 +142,7 @@ void test_find_non_space_reverse_is_no_element() {
     assert(find_non_space_reverse(&s[3],&s[0]) == &s[0]);
 }
 
-void test_find_non_space_reverse_is_not_element() {
+void test_find_non_space_reverse_is_not_last() {
     char s[] = "  3 ";
 
     assert(find_non_space_reverse(&s[3],&s[0]) == &s[2]);
@@ -152,10 +152,34 @@ void test_find_non_space_reverse() {
     test_find_non_space_reverse_is_no_space();
     test_find_non_space_reverse_is_last_element();
     test_find_non_space_reverse_is_no_element();
-    test_find_non_space_reverse_is_not_element();
+    test_find_non_space_reverse_is_not_last();
 }
 
+// 3 (e)
 
+void test_find_space_reverse_is_no_space() {
+    char s[] = "123";
+
+    assert(find_space_reverse(&s[2],&s[0]) == &s[0]);
+}
+
+void test_find_space_reverse_is_last_space() {
+    char s[] = "12  ";
+
+    assert(find_space_reverse(&s[3],&s[0]) == &s[3]);
+}
+
+void test_find_space_reverse_is_not_last_space() {
+    char s[] = "12  23";
+
+    assert(find_space_reverse(&s[5],&s[0]) == &s[3]);
+}
+
+void test_find_space_reverse() {
+    test_find_space_reverse_is_no_space();
+    test_find_space_reverse_is_last_space();
+    test_find_space_reverse_is_not_last_space();
+}
 
 
 
@@ -168,6 +192,7 @@ void test () {
     test_find_non_space();
     test_find_space();
     test_find_non_space_reverse();
+    test_find_space_reverse();
 }
 
 int main() {

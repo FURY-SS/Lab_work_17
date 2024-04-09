@@ -59,5 +59,6 @@ char* find_non_space_reverse(char *r_begin, const char *r_end) {
     return r_begin;
 }
 
-
+char* find_space_reverse(char *r_begin, const char *r_end) {
+}
 
