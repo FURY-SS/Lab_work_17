@@ -67,6 +67,8 @@ char* find_space_reverse(char *r_begin, const char *r_end) {
     return r_begin;
 }
 
+int strcmp_(const char *lhs, const char *rhs) {
 
+}
 
 

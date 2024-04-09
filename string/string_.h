@@ -24,5 +24,10 @@ char* find_non_space_reverse(char *rbegin, const char *rend);
 // возвращает указатель на первый пробельный символ справа, tсли символ не найден, возвращается адрес rend.
 char* find_space_reverse(char *rbegin, const char *rend);
 
+// Функция возвращает отрицательное значение, если lhs располагается до rhs
+// значение 0, если lhs и rhs равны,
+// иначе – положительное значение
+int strcmp_(const char *lhs, const char *rhs);
+
 
 #endif //LAB_WORK_17_STRING__H

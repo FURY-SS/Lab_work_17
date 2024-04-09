@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "string/string_.h"
 
-// 1
+// 2
 
 void test_length_of_string_is_not_empty() {
     char s[] = "Hello";
@@ -28,7 +28,7 @@ void test_length_of_string() {
     test_length_of_string_is_exceeds_the_size();
 }
 
-// 2
+// 3
 
 void test_strlen_is_not_empty() {
     char s[10] = "\tHello\t";
@@ -47,7 +47,7 @@ void test_strlen_() {
     test_strlen_is_empty();
 }
 
-// 3 (a)
+// 4 (a)
 
 void test_find_is_enabled() {
     char s[] = "Hello";
@@ -70,7 +70,7 @@ void test_find() {
     test_find_is_not_enabled();
 }
 
-// 3 (b)
+// 4 (b)
 
 void test_find_non_space_is_space() {
     char s[] = "\t  3 4 5";
@@ -96,7 +96,7 @@ void test_find_non_space() {
     test_find_non_space_is_space_and_no_elements();
 }
 
-// 3 (c)
+// 4 (c)
 
 void test_find_space_is_space_and_no_elements() {
     char s[] = "    ";
@@ -122,7 +122,7 @@ void test_find_space() {
     test_find_space_is_no_space();
 }
 
-// 3 (d)
+// 4 (d)
 
 void test_find_non_space_reverse_is_no_space() {
     char s[] = "123";
@@ -155,7 +155,7 @@ void test_find_non_space_reverse() {
     test_find_non_space_reverse_is_not_last();
 }
 
-// 3 (e)
+// 4 (e)
 
 void test_find_space_reverse_is_no_space() {
     char s[] = "123";
@@ -181,9 +181,39 @@ void test_find_space_reverse() {
     test_find_space_reverse_is_not_last_space();
 }
 
-// 4
+// 5
 
 
+
+
+
+
+void test_strcmp_is_equal() {
+    char s1[] = "123";
+    char s2[] = "123";
+
+    assert(strcmp_(s1, s2) == 0);
+}
+
+void test_strcmp_is_not_equal_1() {
+    char s1[] = "123";
+    char s2[] = "456";
+
+    assert(strcmp_(s1, s2) == -3);
+}
+
+void test_strcmp_is_not_equal_2() {
+    char s1[] = "125";
+    char s2[] = "123";
+
+    assert(strcmp_(s1, s2) == 2);
+}
+
+void test_strcmp_() {
+    test_strcmp_is_equal();
+    test_strcmp_is_not_equal_1();
+    test_strcmp_is_not_equal_2();
+}
 
 
 
@@ -195,6 +225,7 @@ void test () {
     test_find_space();
     test_find_non_space_reverse();
     test_find_space_reverse();
+    test_strcmp_();
 }
 
 int main() {
