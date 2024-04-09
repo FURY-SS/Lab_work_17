@@ -44,5 +44,11 @@ char* find_non_space(char *begin) {
 }
 
 char* find_space(char *begin) {
+    while (*begin != '\0' && !isspace(*begin)) {
+        begin++;
+    }
 
+    return begin;
 }
+
+
