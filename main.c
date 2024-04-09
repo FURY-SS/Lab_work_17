@@ -250,7 +250,7 @@ void test_copy_if() {
 // 6 (c)
 
 void test_copy_if_reverse() {
-    char s[] = "1a2dcd3d";
+    char s[] = "f1s2a3";
     char s_copy[15];
 
     copy_if(s + strlen_(s) - 1, s - 1, s_copy, isdigit);
