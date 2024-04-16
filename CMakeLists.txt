@@ -7,4 +7,5 @@ add_executable(lab_work_17 main.c
         string/string_.h
         string/string_.c
         "string/tasks/ remove_non_letters.h"
+        string/tasks/remove_adjacent_equal_letters.h
 )

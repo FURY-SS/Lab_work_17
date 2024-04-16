@@ -19,19 +19,19 @@ void test_1_empty() {
     ASSERT_STRING("", s);
 }
 
-void test_2_non_space() {
+void test_1_non_space() {
     char s[] = "Hi123";
     remove_non_letters(s);
     ASSERT_STRING("Hi123", s);
 }
 
-void test_3_space() {
+void test_1_space() {
     char s[] = "Hi123";
     remove_non_letters(s);
     ASSERT_STRING("Hi123", s);
 }
 
-void test_4_space_in_border() {
+void test_1_space_in_border() {
     char s[] = "   Hi    12 3    ";
     remove_non_letters(s);
     ASSERT_STRING("Hi123", s);
@@ -39,9 +39,9 @@ void test_4_space_in_border() {
 
 void test_1_remove_non_letters() {
     test_1_empty();
-    test_2_non_space();
-    test_3_space();
-    test_4_space_in_border();
+    test_1_non_space();
+    test_1_space();
+    test_1_space_in_border();
 }
 
 #endif //LAB_WORK_17_REMOVE_NON_LETTERS_H
