@@ -3,6 +3,8 @@
 #ifndef LAB_WORK_17_STRING__H
 #define LAB_WORK_17_STRING__H
 
+#define ASSERT_STRING(expected, got) assert_string(expected, got, __FILE__, __FUNCTION__, __LINE__)
+
 // возвращает длину строки
 int length_of_string(const char *str);
 
@@ -41,5 +43,11 @@ char* copy_if(const char *begin_source, const char *end_source, char *begin_dest
  // заканчивая rendSource, удовлетворяющие функции-предикату f.
  // Функция возвращает значение beginDestination по окончанию работы функции.
 char* copy_if_reverse(const char *r_begin_source, const char *r_end_source, char *begin_destination, int (*f)(int));
+
+//
+char* get_end_of_string(char* s);
+
+//
+void assert_string(const char* expected, char* got, char const* file_name, char const* func_name, int line);
 
 #endif //LAB_WORK_17_STRING__H
