@@ -9,4 +9,5 @@ add_executable(lab_work_17 main.c
         "string/tasks/ remove_non_letters.h"
         string/tasks/remove_adjacent_equal_letters.h
         string/tasks/reverse_str.h
+        string/tasks/replace_digit_to_space.h
 )

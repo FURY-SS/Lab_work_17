@@ -60,22 +60,25 @@ char* copy_if(const char *begin_source, const char *end_source, char *begin_dest
  // Функция возвращает значение beginDestination по окончанию работы функции.
 char* copy_if_reverse(char *r_begin_source, char *r_end_source, char *begin_destination, int (*f)(int));
 
-//
+// возвращает конец строки
 char* get_end_of_string(char* s);
 
-//
+// функция тестирования
 void assert_string(const char* expected, char* got, char const* file_name, char const* func_name, int line);
 
-//
+// возвращает значение 0, если слово не было считано, иначе возвращено значение 1 и в переменную word типа WordDescriptor
+//будут записаны позиции начала слова, и первого символа после конца слова.
 bool get_word(char* begin_search, word_descriptor* word);
 
 //
 bool get_word_without_space(char* begin_search, word_descriptor* word);
 
-//
+// считывает слова с конца строки
 bool get_word_reverse(char* r_begin, char* r_end, word_descriptor* word);
 
-//
+// освобождение строки
+void free_string(char* string);
+
 
 
 #endif //LAB_WORK_17_STRING__H
