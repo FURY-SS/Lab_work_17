@@ -11,4 +11,5 @@ add_executable(lab_work_17 main.c
         string/tasks/reverse_str.h
         string/tasks/replace_digit_to_space.h
         string/tasks/replace_word_to_word.h
+        string/tasks/lexicographical_str.h
 )
