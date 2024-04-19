@@ -3,13 +3,29 @@
 #ifndef LAB_WORK_17_STRING__H
 #define LAB_WORK_17_STRING__H
 
+#include <stdio.h>
+#include <stdbool.h>
+#include <ctype.h>
+
 #define ASSERT_STRING(expected, got) assert_string(expected, got, __FILE__, __FUNCTION__, __LINE__)
+
+#define MAX_WORD_SIZE 20
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_STRING_SIZE 100
+
+extern char _string_buffer[MAX_STRING_SIZE + 1];
+
+typedef struct word_descriptor {
+    char* begin;
+    char* end;
+} word_descriptor;
+
 
 // возвращает длину строки
 int length_of_string(const char *str);
 
 // возвращает количество символов в строке
-size_t strlen_(const char* begin);
+size_t strlen_(char* begin);
 
 // возвращает указатель на первый элемент, расположенным между адресами begin и end не включая end.
 char* find(char *begin, char *end, int ch);
@@ -42,12 +58,24 @@ char* copy_if(const char *begin_source, const char *end_source, char *begin_dest
 // записывает по адресу beginDestination элементы из фрагмента памяти начиная с rbeginSource
  // заканчивая rendSource, удовлетворяющие функции-предикату f.
  // Функция возвращает значение beginDestination по окончанию работы функции.
-char* copy_if_reverse(const char *r_begin_source, const char *r_end_source, char *begin_destination, int (*f)(int));
+char* copy_if_reverse(char *r_begin_source, char *r_end_source, char *begin_destination, int (*f)(int));
 
 //
 char* get_end_of_string(char* s);
 
 //
 void assert_string(const char* expected, char* got, char const* file_name, char const* func_name, int line);
+
+//
+bool get_word(char* begin_search, word_descriptor* word);
+
+//
+bool get_word_without_space(char* begin_search, word_descriptor* word);
+
+//
+bool get_word_reverse(char* r_begin, char* r_end, word_descriptor* word);
+
+//
+
 
 #endif //LAB_WORK_17_STRING__H
