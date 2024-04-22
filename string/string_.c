@@ -210,3 +210,4 @@ bool is_palindrome_word(word_descriptor* word) {
 
     return true;
 }
+

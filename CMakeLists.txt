@@ -14,4 +14,5 @@ add_executable(lab_work_17 main.c
         string/tasks/lexicographical_str.h
         string/tasks/print_revers_ordered.h
         string/tasks/counter_palindrome_word.h
+        string/tasks/swap_words.h
 )
