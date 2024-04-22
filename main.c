@@ -7,6 +7,7 @@
 #include "string/tasks/print_revers_ordered.h"
 #include "string/tasks/counter_palindrome_word.h"
 #include "string/tasks/swap_words.h"
+#include "string/tasks/change_word_order.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -18,4 +19,5 @@ int main() {
     test_7_print_reverse_ordered();
     test_8_counter_palindrome_word();
     test_9_swap_words();
+    test_10_change_word_order();
 }
