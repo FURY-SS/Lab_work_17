@@ -19,4 +19,5 @@ add_executable(lab_work_17 main.c
         string/tasks/get_word_before_first_word_with_a.h
         string/tasks/find_last_common_word.h
         string/tasks/find_duplicate_words.h
+        string/tasks/find_with_the_same_letters_words.h
 )
