@@ -16,4 +16,5 @@ add_executable(lab_work_17 main.c
         string/tasks/counter_palindrome_word.h
         string/tasks/swap_words.h
         string/tasks/change_word_order.h
+        string/tasks/get_word_before_first_word_with_a.h
 )
