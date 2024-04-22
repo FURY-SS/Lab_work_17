@@ -17,4 +17,5 @@ add_executable(lab_work_17 main.c
         string/tasks/swap_words.h
         string/tasks/change_word_order.h
         string/tasks/get_word_before_first_word_with_a.h
+        string/tasks/find_last_common_word.h
 )

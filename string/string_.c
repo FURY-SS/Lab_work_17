@@ -211,3 +211,34 @@ bool is_palindrome_word(word_descriptor* word) {
     return true;
 }
 
+bool is_word_equal(const word_descriptor word1, const word_descriptor word2) {
+    char* begin1 = word1.begin;
+    char* begin2 = word2.begin;
+
+    while (begin1 < word1.end && begin2 < word2.end) {
+        if (*begin1 != *begin2)
+            return false;
+
+        begin1++;
+        begin2++;
+    }
+
+    if (word1.end - begin1 > 0 || word2.end - begin2 > 0)
+        return false;
+
+    return true;
+}
+
+void word_descriptor_to_string(word_descriptor word, char* dest) {
+    if (word.begin == NULL && word.end == NULL)
+        return;
+
+    while (word.begin <= word.end) {
+        *dest = *word.begin;
+        word.begin++;
+        dest++;
+    }
+
+    *dest = '\0';
+}
+

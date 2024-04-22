@@ -9,6 +9,7 @@
 #include "string/tasks/swap_words.h"
 #include "string/tasks/change_word_order.h"
 #include "string/tasks/get_word_before_first_word_with_a.h"
+#include "string/tasks/find_last_common_word.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -22,4 +23,5 @@ int main() {
     test_9_swap_words();
     test_10_change_word_order();
     test_11_get_word_before_first_word_with_a();
+    test_12_find_last_common_word();
 }
