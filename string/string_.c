@@ -8,6 +8,9 @@
 
 char _string_buffer[MAX_STRING_SIZE + 1];
 
+bag_of_words _bag = {.words = NULL, .size = 0};
+bag_of_words _bag2 = {.words = NULL, .size = 0};
+
 int length_of_string(const char *str) {
     int length = 0;
 
@@ -174,4 +177,21 @@ void free_string(char* string) {
         *ptr = '\0';
         ptr++;
     }
+}
+
+void print_word(word_descriptor word) {
+    while (word.begin <= word.end) {
+        printf("%c", *word.begin);
+        word.begin++;
+    }
+    printf("\n");
+}
+
+void free_bag(bag_of_words* bag) {
+    for (size_t i = 0; i < bag->size; i++) {
+        bag->words[i].begin = NULL;
+        bag->words[i].end = NULL;
+    }
+
+    bag->size = 0;
 }
