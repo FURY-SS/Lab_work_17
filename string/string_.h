@@ -93,6 +93,9 @@ void print_word(word_descriptor word);
 void free_bag(bag_of_words* bag);
 
 //
+bool is_palindrome_word(word_descriptor* word);
+
+//
 
 
 #endif //LAB_WORK_17_STRING__H

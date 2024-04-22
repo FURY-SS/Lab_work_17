@@ -1,9 +1,9 @@
 # ninja log v5
-2	210	7352245398527620	CMakeFiles/lab_work_17.dir/main.c.obj	920188539aef83a
-21	204	7352197172982147	CMakeFiles/lab_work_17.dir/string/string_.c.obj	17e69148ba0b1914
-210	325	7352245399657878	lab_work_17.exe	b646a75cf47cee27
-26	337	7354954519903915	CMakeFiles/lab_work_17.dir/string/string_.c.obj	17e69148ba0b1914
-3	344	7354954519973937	CMakeFiles/lab_work_17.dir/main.c.obj	920188539aef83a
-344	610	7354954522614520	lab_work_17.exe	b646a75cf47cee27
 2	215	7354955463681037	CMakeFiles/lab_work_17.dir/main.c.obj	920188539aef83a
+26	337	7354954519903915	CMakeFiles/lab_work_17.dir/string/string_.c.obj	17e69148ba0b1914
 216	324	7354955464741273	lab_work_17.exe	b646a75cf47cee27
+24	217	7354969943369560	CMakeFiles/lab_work_17.dir/string/string_.c.obj	17e69148ba0b1914
+2	233	7354969943529595	CMakeFiles/lab_work_17.dir/main.c.obj	920188539aef83a
+233	365	7354969944819887	lab_work_17.exe	b646a75cf47cee27
+3	220	7354971365091320	CMakeFiles/lab_work_17.dir/main.c.obj	920188539aef83a
+220	340	7354971366271591	lab_work_17.exe	b646a75cf47cee27
