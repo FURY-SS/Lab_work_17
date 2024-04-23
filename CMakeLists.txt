@@ -24,4 +24,5 @@ add_executable(lab_work_17 main.c
         string/tasks/find_preceding_word.h
         string/tasks/remove_palindrome_word.h
         string/tasks/balance_string.h
+        string/tasks/letters_belong_string.h
 )
