@@ -13,6 +13,7 @@
 #include "string/tasks/find_duplicate_words.h"
 #include "string/tasks/find_with_the_same_letters_words.h"
 #include "string/tasks/get_word_except_last.h"
+#include "string/tasks/find_preceding_word.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -30,4 +31,5 @@ int main() {
     test_13_find_duplicate_words();
     test_14_find_with_the_same_letters_words();
     test_15_get_word_except_last();
+    test_16_find_preceding_word();
 }
