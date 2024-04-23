@@ -22,4 +22,5 @@ add_executable(lab_work_17 main.c
         string/tasks/find_with_the_same_letters_words.h
         string/tasks/get_word_except_last.h
         string/tasks/find_preceding_word.h
+        string/tasks/remove_palindrome_word.h
 )
