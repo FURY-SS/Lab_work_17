@@ -1,5 +1,3 @@
-// Created by Vadim on 22.04.2024.
-
 #ifndef LAB_WORK_17_PRINT_REVERS_ORDERED_H
 #define LAB_WORK_17_PRINT_REVERS_ORDERED_H
 
@@ -17,7 +15,6 @@ void get_bag_of_words(bag_of_words* bag, char* s) {
     }
 }
 
-
 void print_word_1(word_descriptor word) {
     while (word.begin != word.end) {
         printf("%c", *word.begin);
@@ -25,7 +22,6 @@ void print_word_1(word_descriptor word) {
     }
     printf(" ");
 }
-
 
 void print_reverse_ordered(char* s) {
     get_bag_of_words(&_bag, s);
@@ -44,24 +40,20 @@ void test_7_empty() {
     print_reverse_ordered(s);
 }
 
-
 void test_7_one_word() {
     char s[] = "like";
     print_reverse_ordered(s);
 }
-
 
 void test_7_only_letters() {
     char s[] = "l i k";
     print_reverse_ordered(s);
 }
 
-
 void test_7_more_word() {
     char s[] = "I like to drink tea";
     print_reverse_ordered(s);
 }
-
 
 void test_7_print_reverse_ordered() {
     printf("test 7: \n");

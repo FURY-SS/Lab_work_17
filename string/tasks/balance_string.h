@@ -5,7 +5,6 @@
 
 #include "../string_.h"
 
-
 void complement_string(char* s1, char* s2, size_t n) {
     char* begin_search = s2;
 
@@ -63,10 +62,10 @@ void test_18_fir_empty() {
 
 void test_18_sec_empty() {
     char s1[40] = "test test";
-    size_t n1 = 0;
+    size_t n1 = 2;
 
     char s2[40] = "";
-    size_t n2 = 2;
+    size_t n2 = 0;
 
     balance_string(s1, n1, s2, n2);
 
@@ -86,7 +85,6 @@ void test_18_equal_length() {
     ASSERT_STRING("three word", s1);
     ASSERT_STRING("two man", s2);
 }
-
 
 void test_18_different_length() {
     char s1[100] = "max";

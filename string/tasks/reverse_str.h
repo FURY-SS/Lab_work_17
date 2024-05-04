@@ -54,13 +54,11 @@ void test_3_empty() {
     ASSERT_STRING("", s);
 }
 
-
 void test_3_one_letters() {
     char s[] = "a";
     reverse_word_in_string(s);
     ASSERT_STRING("a", s);
 }
-
 
 void test_3_one_word() {
     char s[] = "abcd";
@@ -68,13 +66,11 @@ void test_3_one_word() {
     ASSERT_STRING("dcba", s);
 }
 
-
 void test_3_two_word() {
     char s[] = "abcde aaa";
     reverse_word_in_string(s);
     ASSERT_STRING("edcba aaa", s);
 }
-
 
 void test_3_reverse_word() {
     test_3_empty();
@@ -82,7 +78,5 @@ void test_3_reverse_word() {
     test_3_one_word();
     test_3_two_word();
 }
-
-
 
 #endif //LAB_WORK_17_REVERSE_STR_H

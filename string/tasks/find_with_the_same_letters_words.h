@@ -49,24 +49,20 @@ void test_14_empty() {
     assert(!are_identical_words_in_string(s));
 }
 
-
 void test_14_one_word() {
     char s[] = "word";
     assert(!are_identical_words_in_string(s));
 }
-
 
 void test_14_with_the_same_letters_words_not_in_string() {
     char s[] = "duplicate not in string";
     assert(!are_identical_words_in_string(s));
 }
 
-
 void test_14_with_the_same_letters_words_in_string() {
     char s[] = "string in string";
     assert(are_identical_words_in_string(s));
 }
-
 
 void test_14_find_with_the_same_letters_words() {
     test_14_empty();
@@ -74,9 +70,5 @@ void test_14_find_with_the_same_letters_words() {
     test_14_with_the_same_letters_words_not_in_string();
     test_14_with_the_same_letters_words_in_string();
 }
-
-
-
-
 
 #endif //LAB_WORK_17_FIND_WITH_THE_SAME_LETTERS_WORDS_H

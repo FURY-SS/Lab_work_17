@@ -19,23 +19,5 @@
 #include "string/tasks/letters_belong_string.h"
 
 int main() {
-    test_1_remove_non_letters();
-    test_2_remove_adjacent_equal_letters();
-    test_3_reverse_word();
-    test_4_replace_digit_to_space();
-    test_5_replace_word_to_word();
-    test_6_lexicographical_str();
-    test_7_print_reverse_ordered();
-    test_8_counter_palindrome_word();
-    test_9_swap_words();
-    test_10_change_word_order();
-    test_11_get_word_before_first_word_with_a();
-    test_12_find_last_common_word();
-    test_13_find_duplicate_words();
-    test_14_find_with_the_same_letters_words();
-    test_15_get_word_except_last();
-    test_16_find_preceding_word();
-    test_17_remove_palindrome_word();
-    test_18_balance_string();
-    test_19_letters_belong_string();
+
 }

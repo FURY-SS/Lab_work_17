@@ -5,7 +5,6 @@
 
 #include "../string_.h"
 
-
 void append_word(char* result, word_descriptor* word) {
     char* ptr = result;
     while (*ptr != '\0') {
@@ -23,7 +22,6 @@ void append_word(char* result, word_descriptor* word) {
     ptr++;
     *ptr = '\0';
 }
-
 
 void merge_words(char* s1, char* s2, char* result) {
     word_descriptor word1, word2;
@@ -55,7 +53,6 @@ void test_9_empty() {
     ASSERT_STRING("", result);
 }
 
-
 void test_9_one_string_empty() {
     char result[100] = "";
 
@@ -78,7 +75,6 @@ void test_9_different_string() {
     ASSERT_STRING("I LIKE ", result);
 }
 
-
 void test_9_different_amount_word_1() {
     char result[100] = "";
 
@@ -89,7 +85,6 @@ void test_9_different_amount_word_1() {
 
     ASSERT_STRING("test word letter ", result);
 }
-
 
 void test_9_different_amount_word_2() {
     char result[100] = "";
@@ -109,6 +104,5 @@ void test_9_swap_words() {
     test_9_different_amount_word_1();
     test_9_different_amount_word_2();
 }
-
 
 #endif //LAB_WORK_17_SWAP_WORDS_H

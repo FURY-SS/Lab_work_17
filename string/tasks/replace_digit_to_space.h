@@ -40,7 +40,6 @@ void test_4_empty() {
     ASSERT_STRING("", s);
 }
 
-
 void test_4_non_digit() {
     char s[] = "a";
     replace_digit_to_space(s);
@@ -53,13 +52,11 @@ void test_4_non_letters() {
     ASSERT_STRING(" ", s);
 }
 
-
 void test_4_letters_and_digit() {
     char s[] = "a2b";
     replace_digit_to_space(s);
     ASSERT_STRING("a  b", s);
 }
-
 
 void test_4_replace_digit_to_space() {
     test_4_empty();
@@ -67,6 +64,5 @@ void test_4_replace_digit_to_space() {
     test_4_non_letters();
     test_4_letters_and_digit();
 }
-
 
 #endif //LAB_WORK_17_REPLACE_DIGIT_TO_SPACE_H

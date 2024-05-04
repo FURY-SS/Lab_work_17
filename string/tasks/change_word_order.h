@@ -5,7 +5,6 @@
 
 #include "../string_.h"
 
-
 void change_word_order(char *s) {
     if (strlen_(s) == 0)
         return;
@@ -36,13 +35,11 @@ void test_10_empty() {
     ASSERT_STRING("", s);
 }
 
-
 void test_10_one_word() {
     char s[] = "world";
     change_word_order(s);
     ASSERT_STRING("world", s);
 }
-
 
 void test_10_only_letters() {
     char s[] = "a b c d";
@@ -50,13 +47,11 @@ void test_10_only_letters() {
     ASSERT_STRING("d c b a", s);
 }
 
-
 void test_10_different_word() {
     char s[] = "world apple test";
     change_word_order(s);
     ASSERT_STRING("test apple world", s);
 }
-
 
 void test_10_change_word_order() {
     test_10_empty();

@@ -5,7 +5,6 @@
 
 #include "../string_.h"
 
-
 void remove_palindrome_word(char* s) {
     char* read_begin = _string_buffer;
     char* read_end = copy(s, s + strlen_(s), _string_buffer);
@@ -33,13 +32,11 @@ void test_17_empty() {
     ASSERT_STRING("", s);
 }
 
-
 void test_17_no_palindrome() {
     char s[] = "no palindrome";
     remove_palindrome_word(s);
     ASSERT_STRING("no palindrome", s);
 }
-
 
 void test_17_only_letters() {
     char s[] = "a b c d";
@@ -47,13 +44,11 @@ void test_17_only_letters() {
     ASSERT_STRING("", s);
 }
 
-
 void test_17_different_string() {
     char s[] = "adda are word a b she word";
     remove_palindrome_word(s);
     ASSERT_STRING("are word she word", s);
 }
-
 
 void test_17_remove_palindrome_word() {
     test_17_empty();
@@ -61,17 +56,5 @@ void test_17_remove_palindrome_word() {
     test_17_only_letters();
     test_17_different_string();
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #endif //LAB_WORK_17_REMOVE_PALINDROME_WORD_H

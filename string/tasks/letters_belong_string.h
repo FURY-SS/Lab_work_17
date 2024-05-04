@@ -8,7 +8,6 @@
 
 #define LETTERS_SHIFT 97
 
-
 bool letters_belong_string(char* string, word_descriptor word) {
     bool include[26] = {0};
 

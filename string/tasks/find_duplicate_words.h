@@ -37,24 +37,20 @@ void test_13_empty() {
     assert(!are_equal_words_in_string(s));
 }
 
-
 void test_13_one_word() {
     char s[] = "word";
     assert(!are_equal_words_in_string(s));
 }
-
 
 void test_13_duplicate_not_in_string() {
     char s[] = "duplicate not in string";
     assert(!are_equal_words_in_string(s));
 }
 
-
 void test_13_duplicate_in_string() {
     char s[] = "string in string";
     assert(are_equal_words_in_string(s));
 }
-
 
 void test_13_find_duplicate_words() {
     test_13_empty();
@@ -62,8 +58,5 @@ void test_13_find_duplicate_words() {
     test_13_duplicate_not_in_string();
     test_13_duplicate_in_string();
 }
-
-
-
 
 #endif //LAB_WORK_17_FIND_DUPLICATE_WORDS_H

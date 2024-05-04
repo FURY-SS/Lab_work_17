@@ -42,24 +42,20 @@ void test_8_non_palindrome() {
     assert(counter_palindrome_words(s) == 0);
 }
 
-
 void test_8_only_letters() {
     char s[] = "a b c d";
     assert(counter_palindrome_words(s) == 4);
 }
-
 
 void test_8_only_palindrome() {
     char s[] = "arera, non, boob";
     assert(counter_palindrome_words(s) == 3);
 }
 
-
 void test_8_different_string() {
     char s[] = "boob, bread, non, arera, apple";
     assert(counter_palindrome_words(s) == 3);
 }
-
 
 void test_8_counter_palindrome_word() {
     test_8_non_palindrome();
